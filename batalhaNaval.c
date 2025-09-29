@@ -6,30 +6,35 @@
 
 int main() {
 
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
-   /*
-    int i, j;
-    char letra = 'A';
-
-        for (j = 1; j <= 9; j++) // Vinculou j ao valor de i
-        {
-            printf("%c ", letra);
-            ++letra;
+// Nível Novato - Posicionamento dos Navios
+    printf(" A B C D E F G H I J\n");
+    // Matriz números
+    int linhas[9][10] = {
+        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {2, 0, 0, 0, 0, 0, 0, 3, 0, 0},
+        {3, 0, 0, 0, 0, 0, 0, 3, 0, 0},
+        {4, 0, 0, 0, 0, 0, 0, 3, 0, 0},
+        {5, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {6, 0, 0, 3, 3, 3, 0, 0, 0, 0},
+        {7, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {8, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {9, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    };
+    
+    // Lógica para printar a Matriz
+    for (int indexlinha = 0; indexlinha < 9; indexlinha++){
+        for (int indexColuna = 0; indexColuna < 10; indexColuna++){
+            printf("%2d", linhas[indexlinha][indexColuna]);
         }
         printf("\n");
-   */
-    // char colunas[] = {'*', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
-    printf("* A B C D E F G H I J\n");
-    for (int l = 1; l < 10; l++) {
-        printf("%d\n", l);
     }
-
-        return 0;
+    // Printando Coordenadas Navios
+    //  printf("\n");
+    printf("Coordenadas Navio Horizontal: \n");
+    printf("Coordenadas Navio Vertical: \n");
+    return 0;
 }
-
+    // linhas[1][0] = 2 (linha/coluna)
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
@@ -45,7 +50,7 @@ int main() {
     // 0 0 1 0 0
     // 0 1 1 1 0
     // 1 1 1 1 1
-    
+
     // Exemplo para habilidade em octaedro:
     // 0 0 1 0 0
     // 0 1 1 1 0
