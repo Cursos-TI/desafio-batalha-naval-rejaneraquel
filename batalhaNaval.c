@@ -37,8 +37,8 @@ int main() {
     }
     // Printando Coordenadas Navios
     //  printf("\n");
-    printf("Coordenadas Navio Horizontal: %d%d\n" );
-    printf("Coordenadas Navio Vertical: \n");
+    printf("--> Coordenadas Navio Horizontal: %c%d,%c%d,%c%d!\n", letras[7], linhas[1][0], letras[7], linhas[2][0], letras[7], linhas[3][0]);
+    printf("--> Coordenadas Navio Vertical: %c%d,%c%d,%c%d!\n", letras[3], linhas[5][0], letras[5], linhas[5][0], letras[6], linhas[5][0]);
     return 0;
 }
     // linhas[1][0] = 2 (linha/coluna)
