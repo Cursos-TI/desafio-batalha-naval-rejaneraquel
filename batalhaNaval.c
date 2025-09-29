@@ -7,7 +7,14 @@
 int main() {
 
 // Nível Novato - Posicionamento dos Navios
-    printf(" A B C D E F G H I J\n");
+   // printf(" A B C D E F G H I J\n");
+    char letras[10] = {'A','B','C','D','E','F','G','H','I','J'};
+
+    for (int i = 0; i < 10; i++){
+        printf(" %c ", letras[i]);
+    }
+    printf("\n");
+
     // Matriz números
     int linhas[9][10] = {
         {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -20,17 +27,17 @@ int main() {
         {8, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {9, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     };
-    
+
     // Lógica para printar a Matriz
     for (int indexlinha = 0; indexlinha < 9; indexlinha++){
         for (int indexColuna = 0; indexColuna < 10; indexColuna++){
-            printf("%2d", linhas[indexlinha][indexColuna]);
+            printf(" %d ", linhas[indexlinha][indexColuna]);
         }
         printf("\n");
     }
     // Printando Coordenadas Navios
     //  printf("\n");
-    printf("Coordenadas Navio Horizontal: \n");
+    printf("Coordenadas Navio Horizontal: %d%d\n" );
     printf("Coordenadas Navio Vertical: \n");
     return 0;
 }
