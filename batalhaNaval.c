@@ -18,11 +18,11 @@ int main() {
     // Matriz números
     int linhas[9][10] = {
         {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {2, 0, 0, 0, 0, 0, 0, 3, 0, 0},
-        {3, 0, 0, 0, 0, 0, 0, 3, 0, 0},
-        {4, 0, 0, 0, 0, 0, 0, 3, 0, 0},
+        {2, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {4, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {5, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {6, 0, 0, 3, 3, 3, 0, 0, 0, 0},
+        {6, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {7, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {8, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         {9, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -32,6 +32,21 @@ int main() {
     for (int indexlinha = 0; indexlinha < 9; indexlinha++){
         for (int indexColuna = 0; indexColuna < 10; indexColuna++){
             printf(" %d ", linhas[indexlinha][indexColuna]);
+            
+            // Navio Vertical 
+            if (linhas[1][7] == 0) {
+                ((linhas[1][7] += 3) &&
+                 (linhas[2][7] += 3) &&
+                 (linhas[3][7] += 3));
+            }
+            
+            // Navio Horizontal
+            if (linhas[5][3] == 0)
+            {
+                ((linhas[5][3] += 3) &&
+                 (linhas[5][4] += 3) &&
+                 (linhas[5][5] += 3));
+            }
         }
         printf("\n");
     }
